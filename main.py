@@ -4,10 +4,11 @@ from PyQt5.QtWidgets  import QApplication, QWidget, QLabel, QPushButton, QVBoxLa
 from PyQt5.QtCore import Qt
 
 class WeatherAPI(QWidget):
-    def __int__(self):
-        pass
+    def __init__(self):
         super().__init__()
-        pass
+        self.city_Label = QLabel("Enter city name?: ", self)
+        self.city_name= QLineEdit(self)
+        self.weather_buttton = QPushButton("Get Weather", self)
 
 
 def main():
